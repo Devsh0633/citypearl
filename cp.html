@@ -100,21 +100,18 @@
   .hero{
     position:relative;
     background:
-      radial-gradient(ellipse 900px 500px at 82% -10%, rgba(198,161,91,0.16), transparent 60%),
-      radial-gradient(ellipse 700px 700px at 10% 110%, rgba(27,58,92,0.5), transparent 60%),
-      linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 55%, var(--navy-800) 100%);
+      linear-gradient(180deg, rgba(8, 17, 32, 0.4) 0%, rgba(8, 17, 32, 0.85) 100%),
+      url('banner.png') center/cover no-repeat;
     padding:168px 0 120px;
     overflow:hidden;
   }
   .hero::before{
-    content:'';
-    position:absolute; inset:0;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23c6a15b' stroke-opacity='0.06' stroke-width='1'%3E%3Cpath d='M60 0L120 60L60 120L0 60Z'/%3E%3Cpath d='M60 20L100 60L60 100L20 60Z'/%3E%3C/g%3E%3C/svg%3E");
-    opacity:0.7; pointer-events:none;
+    display:none;
   }
   .hero-grid{
     position:relative; z-index:2;
-    display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;
+    display:grid; grid-template-columns:1fr; gap:40px; align-items:center;
+    max-width: 800px;
   }
   .eyebrow{
     display:flex; align-items:center; gap:12px; margin-bottom:28px;
@@ -157,8 +154,7 @@
   .hero-meta .l{font-size:11.5px; color:var(--slate-400); letter-spacing:0.04em;}
 
   /* pearl signature graphic */
-  .pearl-emblem{position:relative; display:flex; align-items:center; justify-content:center; height:480px;}
-  .pearl-emblem svg{width:100%; height:100%; max-width:440px;}
+  .pearl-emblem{display:none;}
   .ring{fill:none; stroke-width:1;}
 
   /* ================= SECTION LABELS ================= */
