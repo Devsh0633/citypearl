@@ -99,9 +99,12 @@
   /* ================= HERO ================= */
   .hero{
     position:relative;
-    background:
-      linear-gradient(180deg, rgba(8, 17, 32, 0.4) 0%, rgba(8, 17, 32, 0.85) 100%),
-      url('banner.png') center/cover no-repeat;
+    background-image:
+      linear-gradient(90deg, rgba(8, 17, 32, 0.9) 0%, rgba(8, 17, 32, 0.4) 60%, rgba(8, 17, 32, 0.1) 100%),
+      url('banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding:168px 0 120px;
     overflow:hidden;
   }
@@ -110,8 +113,7 @@
   }
   .hero-grid{
     position:relative; z-index:2;
-    display:grid; grid-template-columns:1fr; gap:40px; align-items:center;
-    max-width: 800px;
+    max-width: 680px;
   }
   .eyebrow{
     display:flex; align-items:center; gap:12px; margin-bottom:28px;
